@@ -9,8 +9,8 @@ RateIt is a newly created web application for rating movies.
 - TypeOrm
 - Nest.js
 - Php
-- JQuery
 - Ajax
+- JQuery
 - MySQL
 - Html
 - Css
