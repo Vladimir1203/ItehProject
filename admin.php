@@ -6,8 +6,8 @@ if(empty($_SESSION['admin'])){
     header("Location: singin.php");
 }
 
-$movie =  @$_GET['subject']; 
-$movie  =  preg_replace('/\s+/u', '+', $movie);
+$movie = @$_GET['subject']; 
+$movie = preg_replace('/\s+/u', '+', $movie);
 $json = @file_get_contents('http://api.themoviedb.org/3/search/movie?api_key=d8bf019d0cca372bd804735f172f67e8&query='.$movie);
 $obj = json_decode($json);
 
@@ -76,7 +76,6 @@ $obj = json_decode($json);
             </table>
 
         </div>
-
 
         <script>
             $(document).ready(function () {

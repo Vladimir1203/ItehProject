@@ -104,8 +104,7 @@ if($parsed_json2["crew"][$i]["job"] == 'Director'){
 
             <div>
 
-     
-
+    
         </div>
 </body>
 

@@ -8,8 +8,6 @@ $rating = $_POST['rating'];
 
 <script>
 
-
-
 fetch(`http://localhost:3000/grades`, {
                 method: 'POST',
                 headers: {
@@ -31,11 +29,6 @@ fetch(`http://localhost:3000/grades`, {
                     alert("Movie rated!");
                 }
             } )
-
-                
-
-              
-                    
 
 </script>
 
