@@ -8,6 +8,7 @@ if (isset($_POST['signin'])) {
     $flag        = false;
 
     $json_string = @file_get_contents('http://localhost:3000/users/username/'.$username);
+    var_dump($username);
     $parsed_json = json_decode($json_string, true);
 
     if ($parsed_json["Username"] == $username && $parsed_json["Password"] == $pass  ){

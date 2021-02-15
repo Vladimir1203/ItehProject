@@ -5,10 +5,9 @@ if(empty($_SESSION['admin'])){
     header("Location: singin.php");
 }
 
-$json_string = @file_get_contents('http://localhost:3000/users/username/admin');
+$json_string = @file_get_contents('http://localhost:3000/users/username/Vladimir');
 $parsed_json = json_decode($json_string, true);
 $admin = $parsed_json["KorisnikId"];
-
 $id = $_GET['var'];
 $json_string = @file_get_contents("https://api.themoviedb.org/3/movie/".$id."?api_key=953329996405fcf730fd2fd2dea895e7");
 $parsed_json = json_decode($json_string, true);
